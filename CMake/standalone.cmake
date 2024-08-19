@@ -1,106 +1,14 @@
 #############################################
 # REQUIRE ITK 3.20 OR LATER                 #
 #############################################
-FIND_PACKAGE(ITK 5.2.1 REQUIRED COMPONENTS
-  ITKAnisotropicSmoothing
-  ITKAntiAlias
-  ITKBiasCorrection
-  ITKBinaryMathematicalMorphology
-  ITKColormap
-  ITKCommon
-  ITKConnectedComponents
-  ITKConvolution
-  ITKDisplacementField
-  ITKDistanceMap
-  ITKFFT
-  ITKFiniteDifference
-  ITKGDCM
-  ITKGPUCommon
-  ITKGPUSmoothing
-  ITKIOGDCM
-  ITKIOGE
-  ITKIOGIPL
-  ITKIOImageBase
-  ITKIOMeshBase
-  ITKIOMeta
-  ITKIONIFTI
-  ITKIONRRD
-  ITKIORAW
-  ITKIOSiemens
-  ITKIOTransformBase
-  ITKIOVTK
-  ITKIOXML
-  ITKImageAdaptors
-  ITKImageCompare
-  ITKImageCompose
-  ITKImageFeature
-  ITKImageFilterBase
-  ITKImageFunction
-  ITKImageGradient
-  ITKImageGrid
-  ITKImageIntensity
-  ITKImageLabel
-  ITKImageNoise
-  ITKImageStatistics
-  ITKLabelMap
-  ITKLabelVoting
-  ITKLevelSets
-  ITKMathematicalMorphology
-  ITKMesh
-  ITKRegistrationCommon
-  ITKSmoothing
-  ITKSpatialObjects
-  ITKStatistics
-  ITKTestKernel
-  ITKThresholding
-  ITKTransform
-  ITKTransformFactory
-  ITKVTK
-  ITKWatersheds
-  ITKZLIB
-  ITKImageIO
-  ITKMeshIO
-  ITKTransformIO
-  MorphologicalContourInterpolation)
+FIND_PACKAGE(ITK REQUIRED)
 
 INCLUDE(${ITK_USE_FILE})
 
 #############################################
 # REQUIRE VTK                               #
 #############################################
-FIND_PACKAGE(VTK 9 REQUIRED COMPONENTS
-  ChartsCore
-  CommonComputationalGeometry
-  CommonCore
-  CommonDataModel
-  CommonExecutionModel
-  CommonMath
-  CommonTransforms
-  FiltersCore
-  FiltersGeneral
-  FiltersGeometry
-  FiltersSources
-  GUISupportQt
-  IOExport
-  IOGeometry
-  IOImage
-  IOLegacy
-  IOPLY
-  ImagingCore
-  ImagingGeneral
-  InteractionStyle
-  InteractionWidgets
-  RenderingAnnotation
-  RenderingContext2D
-  RenderingContextOpenGL2
-  RenderingCore
-  RenderingLOD
-  RenderingOpenGL2
-  RenderingUI
-  RenderingVolume
-  RenderingVolumeOpenGL2
-  RenderingGL2PSOpenGL2
-  ViewsContext2D)
+find_package(VTK REQUIRED)
 
 #############################################
 # REQUIRE QT5                               #

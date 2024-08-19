@@ -1106,13 +1106,13 @@ SET(SNAP_VTK_NONQT_LIBS
   VTK::RenderingOpenGL2
   VTK::RenderingUI
   VTK::RenderingVolume
-  VTK::RenderingVolumeOpenGL2
+  # VTK::RenderingVolumeOpenGL2
   VTK::RenderingGL2PSOpenGL2
   VTK::ViewsContext2D
 )
 
 # Core VTK libraries
-SET(SNAP_VTK_LIBS ${SNAP_VTK_NONQT_LIBS} VTK::GUISupportQt)
+# SET(SNAP_VTK_LIBS ${SNAP_VTK_NONQT_LIBS} VTK::GUISupportQt)
 
 # Libraries provided by the submodules
 SET(SNAP_SUBMODULE_LIBS

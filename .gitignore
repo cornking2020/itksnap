@@ -14,3 +14,12 @@ CMakeLists.txt.user*
 CTestConfig.cmake.user*
 *.autosave
 .clangd
+
+# IDE
+.idea
+.vs
+.vscode
+
+# Build
+build
+out
